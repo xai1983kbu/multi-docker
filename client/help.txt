@@ -1,0 +1,4 @@
+# docker kill $(docker ps -q)
+# OR
+# docker container rm -f containerID
+
