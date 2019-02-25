@@ -22,6 +22,3 @@ rewrite /api/(.*) /$1 break;
 # environment variables - best practice
 # https://www.udemy.com/docker-and-kubernetes-the-complete-guide/learn/v4/questions/5270456
 
-AKIAJ5MOHAJZ63LKSFWA
-qh2gFA8k9kNyo8mgCraOw7YA9BhkNuZeTdKJLbzr
-qh2gFA8k9kNyo8mgCraOw7YA9BhkNuZeTdKJLbzr
