@@ -14,7 +14,7 @@ after_success:
   - docker build -t mariofiore/multi-server ./server
   - docker build -t mariofiore/multi-worker ./worker
   # Log in to the CLI
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo \"$DOCKER_PASSWORD\" | docker login -u \"$DOCKER_ID\" --password-stdin
   # Take those images and push them to docker hub
   - docker push mariofiore/multi-client
   - docker push mariofiore/multi-nginx
