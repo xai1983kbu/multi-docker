@@ -5,3 +5,23 @@ rewrite /api/(.*) /$1 break;
 # https://www.udemy.com/docker-and-kubernetes-the-complete-guide/learn/v4/t/lecture/11437298?start=180
 # And that's exactly what we want to do in this case we want to overwrite that default file.
 # COPY ./default.conf /etc/nginx/conf.d/default.conf
+
+# amazon ECS task definition
+# https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html#container_definitions
+# Dockerrun.aws.json explanation
+{
+  "name": "client", <-- for dashboard and "links"
+  "image": "sozonivka2018/multi-client", <-- fron https://cloud.docker.com/repository/list
+  "hostname": "client",  <-- we use it in nginx: proxy_pass http://client;
+  "essential": false <-- this container is not considered to as essential, at least one has to be essential
+}
+
+# JSON validator
+# https://jsonlint.com/
+
+# environment variables - best practice
+# https://www.udemy.com/docker-and-kubernetes-the-complete-guide/learn/v4/questions/5270456
+
+AKIAJ5MOHAJZ63LKSFWA
+qh2gFA8k9kNyo8mgCraOw7YA9BhkNuZeTdKJLbzr
+qh2gFA8k9kNyo8mgCraOw7YA9BhkNuZeTdKJLbzr
